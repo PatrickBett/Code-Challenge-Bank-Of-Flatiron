@@ -1,0 +1,10 @@
+#header{
+    background-color: indigo;
+    text-align:center;
+    color:white;
+    height:40px;
+    font-weight:bold;
+    padding: 20px 0;
+    font-size:20px;
+    position:sticky;
+}

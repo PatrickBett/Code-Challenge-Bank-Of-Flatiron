@@ -1,0 +1,14 @@
+#searchbar{
+    border:2px solid #E5E4E2;
+    margin:10px;    
+}
+.inputBar{
+    width:90%;    
+    border:none;
+}
+.inputBar:focus{        
+    border:none;
+}
+.searchIcon{
+    float:right;
+}
