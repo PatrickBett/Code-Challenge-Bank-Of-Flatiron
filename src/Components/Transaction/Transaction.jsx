@@ -17,21 +17,37 @@ function Transaction(){
  
   return (
     <div className="transactions"> 
-    <ul>{data.map(item => (
-          <li >{item.date}</li>
-        ))}</ul>
+    
 <table>
-  <tr>
+  <thead>
+    <tr>
     <th>Date</th>
     <th>Description</th>
     <th>Category</th>
     <th>Amount</th>
   </tr>
+  </thead>
 
-   <tr key="item.id">{data.map(item => (
-          <td >{item.date}</td>  
+  <tbody>
+    {data.map((item)=>(
+      <tr key='item.id'>
+        <td>{item.date}</td>
+        <td>{item.description}</td>
+        <td>{item.category}</td>
+        <td>{item.amount}</td>
+      </tr>
+    ))}
+  
+    
+  </tbody>
+  
+
+
+
+   {/* <tr key="item.id">{data.map((item,index) => (
+          <td key={index}>{item.date}</td>  
                   
-        ))}</tr>
+        ))}</tr> */}
 
 
 
