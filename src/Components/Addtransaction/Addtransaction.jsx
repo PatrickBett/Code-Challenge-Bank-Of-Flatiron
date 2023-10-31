@@ -2,8 +2,15 @@ import React from 'react'
 import './transaction.css'
 
 function Addtransaction(){
+
+  const handleAddTransaction =()=>{
+    alert('Add')
+  }
+
+
   return (
     <div className="AddtransactionBar">
+      <form onSubmit={handleAddTransaction}>
       <div className="inputs">
         <div className="datediv"> 
         <span>Date</span>
@@ -27,9 +34,10 @@ function Addtransaction(){
       
       <div className="AddTransactionBtn">         
         <div>
-          <button className="AddTransactionbtn">Add Transcation</button>
+          <button className="AddTransactionbtn" >Add Transcation</button>
         </div>
       </div>
+      </form>
     </div>
   )
 }
