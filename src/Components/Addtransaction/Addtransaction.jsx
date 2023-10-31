@@ -3,8 +3,8 @@ import './transaction.css'
 
 function Addtransaction(){
 
-  const handleAddTransaction =()=>{
-    alert('Add')
+  const handleAddTransaction =(event)=>{
+    console.log(`${event.target.value}`)
   }
 
 
