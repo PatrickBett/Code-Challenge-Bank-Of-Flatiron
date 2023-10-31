@@ -29,8 +29,9 @@ function Transaction(){
   </thead>
 
   <tbody>
+    {/* Display data from Json */}
     {data.map((item)=>(
-      <tr key='item.id'>
+      <tr key={item.id}>
         <td>{item.date}</td>
         <td>{item.description}</td>
         <td>{item.category}</td>
@@ -40,44 +41,8 @@ function Transaction(){
   
     
   </tbody>
-  
-
-
-
-   {/* <tr key="item.id">{data.map((item,index) => (
-          <td key={index}>{item.date}</td>  
-                  
-        ))}</tr> */}
-
-
-
-
-
-
-
-
-
-
-  {/* <tr key={item.id}>{{data.map(item => (
-    <td>{item.date}</td>
-    <td>{item.description}</td>
-    <td>{item.category}</td>
-    <td>{item.amount}</td>
-  ))}</tr> */}
-  
 </table>
-
-    {/* <table >
-      <tr>
-        <th>Date</th>
-        <th>Description</th>
-        <th>category</th>        
-        <th>Amount</th>
-      </tr>
-
        
-    </table> */}
-          
     </div>
   )
 }
